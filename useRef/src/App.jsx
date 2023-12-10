@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Useref from './components/Useref'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-     <div>Use ref example</div>
+     <Useref/>
     </>
   )
 }
