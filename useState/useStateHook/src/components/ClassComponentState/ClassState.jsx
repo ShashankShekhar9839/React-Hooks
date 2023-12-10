@@ -39,9 +39,14 @@ class ClassState extends Component {
 
     // constructor(props) {
     //     super(props);
-    // } 
+    // }  
 
-
+    componentDidUpdate(prevprops) {
+        if(prevprops.count !== this.props.count){
+            console.log('i am rendered due to change in prev prop')
+        }
+    }
+   
     render() {
         let {count, color, handleIncrease, handleDecrease} = this.props;
         return ( 

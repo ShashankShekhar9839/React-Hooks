@@ -31,6 +31,12 @@ class ParentClassState extends Component {
             }
 
         })
+    } 
+     
+    componentDidUpdate(prevState) {
+        if(prevState.count !== this.state.count) {
+            console.log('i am rendered due to change in component did update');
+        }
     }
 
     render(){
